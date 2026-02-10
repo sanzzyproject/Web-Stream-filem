@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamVerse - Nonton Nyaman</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">🎬 StreamVerse</div>
+        <form id="searchForm">
+            <input type="text" id="searchInput" placeholder="Cari film atau series..." required>
+            <button type="submit">Cari</button>
+        </form>
+    </header>
+
+    <main>
+        <div id="loader" class="hidden">Mencari film...</div>
+        <div id="results" class="grid-container">
+            </div>
+    </main>
+
+    <div id="detailModal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div id="modalBody">
+                </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
