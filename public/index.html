@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>CineStream - Nonton Film</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">Cine<span>Stream</span></div>
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Cari film atau series...">
+      <button id="searchBtn"><i class="fas fa-search"></i></button>
+    </div>
+  </header>
+
+  <main id="mainContent">
+    <section class="home-section">
+      <h2 class="section-title">Trending & Rilis Baru</h2>
+      <div id="movieGrid" class="movie-grid">
+        <div class="loader"></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="movieModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <div id="modalBody">
+        </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
